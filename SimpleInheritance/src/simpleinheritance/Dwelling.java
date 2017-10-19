@@ -109,5 +109,9 @@ public class Dwelling {
     public void setBathrooms(double bathrooms) {
         this.bathrooms = bathrooms;
     }
+
+    public String toString() {
+        return streetAddress + "|" + city + "|" + state + "|" + zip + "|" + bedrooms + "|" + bathrooms;
+    }
     
 }
