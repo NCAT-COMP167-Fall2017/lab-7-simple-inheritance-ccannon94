@@ -13,6 +13,12 @@ public class House extends Dwelling {
     private double acreage;
     private int garageSize;
 
+    public House() {
+        super();
+        acreage = 0.0;
+        garageSize = 0;
+    }
+    
     /**
      * @return the acreage
      */
