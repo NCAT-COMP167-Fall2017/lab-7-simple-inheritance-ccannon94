@@ -13,6 +13,11 @@ public class Apartment {
     private String aptNum;
     private boolean laundry;
 
+    public Apartment() {
+        aptNum = "";
+        laundry = false;
+    }
+    
     /**
      * @return the aptNum
      */
