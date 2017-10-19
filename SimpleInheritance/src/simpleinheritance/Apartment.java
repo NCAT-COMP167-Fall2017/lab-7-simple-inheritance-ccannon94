@@ -9,7 +9,7 @@ package simpleinheritance;
  *
  * @author CCannon
  */
-public class Apartment {
+public class Apartment extends Dwelling {
     private String aptNum;
     private boolean laundry;
 
@@ -44,5 +44,10 @@ public class Apartment {
      */
     public void setLaundry(boolean laundry) {
         this.laundry = laundry;
+    }
+    
+    @Override
+    public String toString() { 
+        return super.toString() + "|" + aptNum +"|" + laundry;
     }
 }
