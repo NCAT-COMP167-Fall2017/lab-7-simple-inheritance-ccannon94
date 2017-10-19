@@ -11,6 +11,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -64,6 +65,8 @@ public class SimpleInheritance {
                 break;
         }
         
+        JOptionPane.showMessageDialog(null, apartment.toString(), "New Apartment", JOptionPane.PLAIN_MESSAGE);
+        
         return apartment;
     }
     
@@ -78,6 +81,8 @@ public class SimpleInheritance {
         house.setBathrooms(Double.parseDouble(reader.nextLine().trim()));
         house.setAcreage(Double.parseDouble(reader.nextLine().trim()));
         house.setGarageSize(Integer.parseInt(reader.nextLine().trim()));
+        
+        JOptionPane.showMessageDialog(null, house.toString(), "New House", JOptionPane.PLAIN_MESSAGE);
         
         return house;
     }
