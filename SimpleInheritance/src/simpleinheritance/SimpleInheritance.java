@@ -33,10 +33,10 @@ public class SimpleInheritance {
                 char dwellingType = reader.nextLine().charAt(0);
 
                 switch(dwellingType) {
-                    case 'H':
+                    case 'A':
                         dwellings.add(readApartment());
                         break;
-                    case 'A':
+                    case 'H':
                         dwellings.add(readHouse());
                         break;
                 }
