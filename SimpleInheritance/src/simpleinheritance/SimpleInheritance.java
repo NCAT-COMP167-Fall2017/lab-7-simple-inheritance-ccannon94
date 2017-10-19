@@ -29,15 +29,17 @@ public class SimpleInheritance {
         try {
             reader = new Scanner(new File(args[0]));
             
-            char dwellingType = reader.nextLine().charAt(0);
-            
-            switch(dwellingType) {
-                case 'H':
-                    dwellings.add(readApartment());
-                    break;
-                case 'A':
-                    dwellings.add(readHouse());
-                    break;
+            while(reader.hasNext()) {
+                char dwellingType = reader.nextLine().charAt(0);
+
+                switch(dwellingType) {
+                    case 'H':
+                        dwellings.add(readApartment());
+                        break;
+                    case 'A':
+                        dwellings.add(readHouse());
+                        break;
+                }
             }
         } catch (FileNotFoundException ex) {
             Logger.getLogger(SimpleInheritance.class.getName()).log(Level.SEVERE, null, ex);
