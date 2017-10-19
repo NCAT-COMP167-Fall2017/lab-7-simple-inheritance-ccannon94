@@ -110,6 +110,7 @@ public class Dwelling {
         this.bathrooms = bathrooms;
     }
 
+    @Override
     public String toString() {
         return streetAddress + "|" + city + "|" + state + "|" + zip + "|" + bedrooms + "|" + bathrooms;
     }
