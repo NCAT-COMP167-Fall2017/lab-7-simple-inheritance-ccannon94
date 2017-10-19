@@ -16,7 +16,16 @@ public class Dwelling {
     private String zip;
     private int bedrooms;
     private double bathrooms;
-
+    
+    public Dwelling() {
+        streetAddress = "";
+        city = "";
+        state = "";
+        zip = "";
+        bedrooms = 0;
+        bathrooms = 0.0;
+    }
+    
     /**
      * @return the streetAddress
      */
