@@ -46,4 +46,9 @@ public class House extends Dwelling {
     public void setGarageSize(int garageSize) {
         this.garageSize = garageSize;
     }
+    
+    @Override
+    public String toString() {
+        return super.toString() + "|" + acreage + "|" + garageSize;
+    }
 }
